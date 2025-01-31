@@ -21,7 +21,7 @@ export const generateMusic = async (lyrics, genre) => {
         method: 'POST',
         url: 'https://apibox.erweima.ai/api/v1/generate',
         headers: {
-            Authorization: 'Bearer eb901d4a7f08d0222c57035ab92314bd',
+            Authorization: 'Bearer {APITOKEN}',
             'Content-Type': 'application/json',
             Accept: 'application/json'
         },
