@@ -32,7 +32,7 @@ export const generateMusic = async (lyrics, genre) => {
             style: genre,
             title: 'MinstrelSong',
             model: 'V3_5',
-            callBackUrl: 'http://192.168.0.100:8080/callback'
+            callBackUrl: 'http://localhost:8080/callback'
         }
     };
     try {
@@ -44,7 +44,7 @@ export const generateMusic = async (lyrics, genre) => {
                     url: 'https://apibox.erweima.ai/api/v1/generate/record-info',
                     params: { taskId: response.data.data.taskId },
                     headers: {
-                        Authorization: 'Bearer eb901d4a7f08d0222c57035ab92314bd',
+                        Authorization: 'Bearer {APITOKEN}',
                         Accept: 'application/json'
                     }
                 });
